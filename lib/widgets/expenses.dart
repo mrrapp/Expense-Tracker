@@ -11,7 +11,50 @@ class Expenses extends StatefulWidget {
 }
 
 class _ExpensesState extends State<Expenses> {
-  final List<Expense> _registeredExpenses = [];
+  final List<Expense> _registeredExpenses = [
+    Expense(
+      title: 'Mango',
+      amount: 120.23,
+      category: Category.food,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'Man',
+      amount: 20.23,
+      category: Category.work,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'ango',
+      amount: 120.23,
+      category: Category.general,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'go',
+      amount: 120.23,
+      category: Category.travel,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'Man on fire',
+      amount: 120.23,
+      category: Category.leisure,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'Mango',
+      amount: 120.23,
+      category: Category.food,
+      date: DateTime.now(),
+    ),
+    Expense(
+      title: 'Mango',
+      amount: 120.23,
+      category: Category.food,
+      date: DateTime.now(),
+    ),
+  ];
 
   // making a function that makes users add expenses to the UI
   void _addExpense(Expense expense) {
