@@ -13,6 +13,40 @@ void main() {
       darkTheme: ThemeData.dark().copyWith(
         useMaterial3: true,
         colorScheme: kDarkColorScheme,
+        appBarTheme: const AppBarTheme().copyWith(
+          backgroundColor: kDarkColorScheme.onPrimaryContainer,
+          foregroundColor: kDarkColorScheme.primaryContainer,
+          // actionsIconTheme: const IconThemeData().copyWith(
+          //   color: kColorScheme.onSecondary,
+          // ),
+        ),
+        cardTheme: const CardTheme().copyWith(
+          color: kDarkColorScheme.secondaryContainer,
+          margin: const EdgeInsets.symmetric(
+            horizontal: 24,
+            vertical: 8,
+          ),
+        ),
+        textTheme: const TextTheme().copyWith(
+          titleLarge: TextStyle(
+            fontSize: 18,
+            color: kDarkColorScheme.secondary,
+          ),
+          bodyMedium: TextStyle(
+            color: kDarkColorScheme.onPrimaryContainer,
+          ),
+          bodySmall: const TextStyle(
+            color: Colors.black,
+          ),
+          displaySmall: const TextStyle(
+            color: Colors.black,
+          ),
+        ),
+         elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kDarkColorScheme.secondaryContainer,
+          ),
+        ),
       ),
       theme: ThemeData().copyWith(
         useMaterial3: true,
