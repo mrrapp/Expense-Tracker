@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_expenses/main.dart';
 
 import 'package:my_expenses/widgets/chart.dart';
 import 'package:my_expenses/widgets/expenses-list/expenses_list.dart';
@@ -122,13 +123,17 @@ class _ExpensesState extends State<Expenses> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Expense Tracker'),
+        title: const Text(
+          'My Expense Tracker',
+          //  style: TextStyle(color: Colors.amber),
+        ),
         actions: [
           IconButton(
             onPressed:
                 _addExpenseOverlay, // added as a pointer to the method and not directly as the method, bcos desire is not to get executed here imediately but only when button is pressed
-            icon: const Icon(
+            icon: Icon(
               Icons.add,
+              color: kColorScheme.primaryContainer,
             ),
           ),
         ],

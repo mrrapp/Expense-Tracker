@@ -60,6 +60,7 @@ void main() {
             color: kColorScheme.primaryContainer,
           ),
         ),
+       iconTheme: const IconThemeData().copyWith(color:kColorScheme.onSecondaryContainer),
         cardTheme: const CardTheme().copyWith(
           color: kColorScheme.secondaryContainer,
           margin: const EdgeInsets.symmetric(
@@ -75,7 +76,7 @@ void main() {
         textTheme: const TextTheme().copyWith(
           titleLarge: TextStyle(
             fontSize: 18,
-            color: kColorScheme.secondary,
+            color: kColorScheme.onSecondaryContainer,
           ),
           bodyMedium: const TextStyle(color: Colors.black),
           titleMedium: const TextStyle(color: Colors.black),
@@ -95,6 +96,7 @@ void main() {
       ),
       themeMode: ThemeMode.system,
       home: const Expenses(),
+      debugShowCheckedModeBanner: false,
     ),
   );
 }
