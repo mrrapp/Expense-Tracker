@@ -32,17 +32,18 @@ void main() {
             fontSize: 18,
             color: kDarkColorScheme.secondary,
           ),
-          bodyMedium: TextStyle(
-            color: kDarkColorScheme.onPrimaryContainer,
+          bodyMedium: const TextStyle(
+            color: Colors.black,
           ),
           bodySmall: const TextStyle(
             color: Colors.black,
           ),
+          titleMedium: TextStyle(color: kDarkColorScheme.onPrimary),
           displaySmall: const TextStyle(
             color: Colors.black,
           ),
         ),
-         elevatedButtonTheme: ElevatedButtonThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: kDarkColorScheme.secondaryContainer,
           ),
@@ -54,9 +55,10 @@ void main() {
         appBarTheme: const AppBarTheme().copyWith(
           backgroundColor: kColorScheme.onPrimaryContainer,
           foregroundColor: kColorScheme.primaryContainer,
-          // actionsIconTheme: const IconThemeData().copyWith(
-          //   color: kColorScheme.onSecondary,
-          // ),
+          //color: Colors.white,
+          actionsIconTheme: const IconThemeData().copyWith(
+            color: kColorScheme.primaryContainer,
+          ),
         ),
         cardTheme: const CardTheme().copyWith(
           color: kColorScheme.secondaryContainer,
@@ -75,9 +77,14 @@ void main() {
             fontSize: 18,
             color: kColorScheme.secondary,
           ),
-          bodyMedium: TextStyle(
-            color: kColorScheme.onPrimaryContainer,
-          ),
+          bodyMedium: const TextStyle(color: Colors.black),
+          titleMedium: const TextStyle(color: Colors.black),
+          // displayMedium:  const TextStyle(color: Colors.red),
+          // headlineMedium: const TextStyle(color: Colors.red),
+          // titleSmall: const TextStyle(color: Colors.red),
+          // headlineSmall: const TextStyle(color: Colors.red),
+          // labelMedium: const TextStyle(color: Colors.red),
+          // labelSmall:const TextStyle(color: Colors.red),
           bodySmall: const TextStyle(
             color: Colors.black,
           ),
